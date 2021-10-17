@@ -1,0 +1,31 @@
+/*this is for looks on all of my headers*/
+h1
+{ color: darkseagreen; 
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+/*this is for looks on my lists*/
+li{ color:darksalmon;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+/*this is a class selector*/ 
+.specificstyle{
+	font-style: italic;
+	color: burlywood;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+/*this is an id selector*/
+#specificlink{
+	color: cornflowerblue;
+	font-size: 15px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+		
+#specificlink1{
+	color: cornflowerblue;
+	font-size: 15px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+body  {
+  margin: 50px;
+}
