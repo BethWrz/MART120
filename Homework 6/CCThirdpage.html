@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html>
+	<title>Contact Us</title>
 <head>
-<title>Contact Us</title>
 <h1>Welcome to the Third Page!</h1>
 
 	<link rel="stylesheet" type="text/css" href="EWmain.css">
 		  
 <!External Style Sheet-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!external Style Sheet ends-->
 	
-	<style>span{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+<!Forms-->
+<script>
+	function checkboxes()
+	{
+	var firstname = document.getElementById("fName").value;
+		if(firstname == "")
+	var lastname = document.getElementById("lName").value
+		if(lastname == "")
+	
+	var email = document.getElementById("Email").value;
+		if(email == "")
+	{
+		document.getElementById("submit").onclick = function() {
+	document.getElementById("fName").focus();
+	document.getElementById("fName").style.backgroundColor = "pink";
+	document.getElementById("fNameMessage").innerHTML = " * Required";
+	document.getElementById("fNameMessage").style.color = "red";
+		
+	document.getElementById("lName").focus();
+	document.getElementById("lName").style.backgroundColor = "pink";
+	document.getElementById("lNameMessage").innerHTML = " * Required";
+	document.getElementById("lNameMessage").style.color = "red";
+		
+	document.getElementById("Email").focus();
+		document.getElementById("Email").style.backgroundColor = "pink";
+		document.getElementById("EmailMessage").innerHTML = " *Required";
+		document.getElementById("EmailMessage").style.color = "red";
+	}
+	return false;	
+	}
+	
+</script>
+	
+<style>
+	span{font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 		}
 body{margin: 50px !important;}
 h1 {font-weight: bold;}
 h2 {font-weight: bold;}
-
-	</style>
+		
+</style>
 </head>
 
 <body>
 	<br/>
 	<h2><span class="specificstyle">Contact Us!</span></h2>
-<form action=""> <span>
-First Name: <input type="text" id="fName"><br/>
-	Last Name: <input type="text" id="lName"></span>
+
+	
+	<span>
+First Name: <input type="text" id="fName"><span id="fNameMessage"></span><br/>
+Last Name: <input type="text" id="lName"><span id="lNameMessage"></span><br/>
+Email: <input type="text" id="Email"><span id="EmailMessage"></span>
+	</span>
+	
 	<br/>
 	<br/>
-<span><button id="btnSubmit" class="btn btn-primary" style="background-color: darkgreen">Submit My Info</button></span>
-</form>
+<span><button id="btnSubmit" class="btn btn-primary" onclick="checkboxes();" style="background-color: darkgreen">Submit My Info</button></span>
 <br/>
+	
+	<!Agreement Statement-->
 <h2><span class="specificstyle">Agreement Statement</span></h2>
 <span> You agree to all of the terms and conditions set out in this Agreement and the terms and conditions in any amended or replacement agreement relating to the website</span>
 <br/>
 <span><input type="radio" name="Agreement" value="Yes">Yes</span><br>
 <span><input type="radio" name="Agreement" value="No">No</span><br>
 <br/>
+	
+	<!return buttons-->
 <a href="CCHomepage.html" style="text-decoration: none; color: cornflowerblue; font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif' !important;" target="_new">Home Page</a>
 <br/>
 <a href="CCSecondPage.html" style="text-decoration: none; color: cornflowerblue; font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif' !important;" target="_new">Second Page</a>
