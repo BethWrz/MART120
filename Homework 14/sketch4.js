@@ -41,8 +41,6 @@ createCanvas(750,750);
 	}
 	
 	player(60,100);
-	
-	mouseClicked();
 }
 
 function draw()
@@ -64,6 +62,7 @@ if(charx>width && chary>width-760)
 	
 
 	 // potential enemy
+	strokeWeight(0);
     fill(119,173,158);
     // draw the shape
     for (var i = 0; i < circXs.length; i++) 
@@ -90,8 +89,6 @@ if(charx>width && chary>width-760)
             circYs[i] = height;
 		}
 	}
-	
-	youwin();
 	
 	click();
 }
